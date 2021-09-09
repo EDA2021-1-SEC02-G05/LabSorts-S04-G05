@@ -90,8 +90,8 @@ def printSortResults(ord_books, sample=10):
         while i <= sample:
             book = lt.getElement(ord_books,i)
             print('Titulo: ' + book['title'] + ' ISBN: ' +
-            book['isbn'] + ' Rating: ' + book['average_rating'])
-        i+=1
+                book['isbn'] + ' Rating: ' + book['average_rating'])
+            i+=1
 
 catalog = None
 
@@ -131,7 +131,7 @@ while True:
         size = input("Indique tamaño de la muestra: ")
         result = controller.sortBooks(catalog, int(size))
         print("Para la muestra de", size, " elementos, el tiempo (mseg) es: ",str(result[0]))
-        printResults(result[1])
+        printSortResults(result[1])
 
     else:
         sys.exit(0)
