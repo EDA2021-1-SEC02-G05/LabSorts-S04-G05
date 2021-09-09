@@ -95,6 +95,7 @@ def printSortResults(ord_books, sample=10):
 
 catalog = None
 
+
 """
 Menu principal
 """
